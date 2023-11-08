@@ -23,3 +23,12 @@ console.log(pathValue);
 Object.keys(pathValue).forEach((key) =>
   console.log(key + " : " + pathValue[key])
 );
+
+const math = require("./math");
+console.log(math.add(2, 3));
+
+const { add, subtract, multiply, divide } = require("./math");
+console.log(add(10, 3));
+console.log(subtract(10, 3));
+console.log(multiply(10, 3));
+console.log(divide(10, 3));
